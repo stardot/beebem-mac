@@ -1,0 +1,16 @@
+//
+//  Release.xcconfig
+//  BeebEm4
+//
+//  Created by Martin White on 05/09/2018.
+//  Copyright © 2018 Martin White. All rights reserved.
+//
+//////////////////////////////////////////////////////////
+//
+// This is a simple way of removing the Mac Development
+// team ID from source control. Handy for if the project
+// is open source or you otherwise want to share it with
+// the world. Just exclude the file 'CodeSign.xcconfig'
+// from GiT.
+
+#include "CodeSign.xcconfig"

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -64,6 +64,7 @@
 			isEditable = 1;
 			outputFiles = (
 			);
+			script = "";
 		};
 		1905228608A5FBF50096D433 /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
@@ -72,12 +73,14 @@
 			isEditable = 1;
 			outputFiles = (
 			);
+			script = "";
 		};
 		1905228708A5FC8B0096D433 /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
 			isEditable = 1;
 			outputFiles = (
 			);
+			script = "";
 		};
 /* End PBXBuildRule section */
 
@@ -98,7 +101,7 @@
 		1933BC880952FA1900C45D5A /* serial.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = serial.cc; sourceTree = "<group>"; };
 		19368F9A098397E300B05B51 /* teletext.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = teletext.cc; sourceTree = "<group>"; };
 		1939747E08E6E5A900486851 /* userkybd.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = userkybd.cc; sourceTree = "<group>"; };
-		194EFCF7090E7EBE0060F3BD /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		194EFCF7090E7EBE0060F3BD /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/../../../../../../../../../System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
 		195825A70D19A79F0026D58C /* printing.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printing.cc; sourceTree = "<group>"; };
 		197E62FF09605023008AA155 /* econet.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = econet.cc; sourceTree = "<group>"; };
 		1991931B0BF5D4D20025F5A0 /* ArmDisassembler.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ArmDisassembler.cc; sourceTree = "<group>"; };
@@ -134,6 +137,10 @@
 		4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D0C4E970486CD37000505A6 /* BeebEm4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeebEm4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C14463B121409E1900E90AC2 /* BeebEm4.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BeebEm4.xcconfig; sourceTree = "<group>"; };
+		C170E2BB214098EB00A4221B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		C170E2BC214099F900A4221B /* CodeSign.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CodeSign.xcconfig; sourceTree = "<group>"; };
+		C1903D4421409181003BE0C2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		FC8B56521EBB94F1001DF5A9 /* discedit.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = discedit.cc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +171,7 @@
 		20286C29FDCF999611CA2CEA /* BeebEm3 */ = {
 			isa = PBXGroup;
 			children = (
+				C14463B021409DF000E90AC2 /* Config */,
 				194EFCF7090E7EBE0060F3BD /* QuickTime.framework */,
 				191656C00B39BBAE00C4FA44 /* IOKit.framework */,
 				19E9FA30086B5CC1008741A6 /* Carbon.framework */,
@@ -245,6 +253,17 @@
 			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
 		};
+		C14463B021409DF000E90AC2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C14463B121409E1900E90AC2 /* BeebEm4.xcconfig */,
+				C170E2BC214099F900A4221B /* CodeSign.xcconfig */,
+				C170E2BB214098EB00A4221B /* Debug.xcconfig */,
+				C1903D4421409181003BE0C2 /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,10 +294,17 @@
 		20286C28FDCF999611CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Jon Welch";
+				TargetAttributes = {
+					8D0C4E890486CD37000505A6 = {
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 19DDA32F086B296D0079CA8E /* Build configuration list for PBXProject "BeebEm4" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
@@ -377,12 +403,13 @@
 /* Begin XCBuildConfiguration section */
 		19DDA32C086B296D0079CA8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C170E2BB214098EB00A4221B /* Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
+				ARCHS = i386;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "${DEVELOPMENT_TEAM_ID}";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -393,8 +420,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.g7jjf.beebem;
 				PRODUCT_NAME = BeebEm4;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx10.6;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
@@ -402,12 +433,13 @@
 		};
 		19DDA32D086B296D0079CA8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1903D4421409181003BE0C2 /* Release.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
+				ARCHS = i386;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = "${DEVELOPMENT_TEAM_ID}";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -416,37 +448,23 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.g7jjf.beebem;
 				PRODUCT_NAME = BeebEm4;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				SDKROOT = macosx10.6;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
-		19DDA32E086B296D0079CA8E /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = BeebEm3_Prefix.pch;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				PREBINDING = NO;
-				PRODUCT_NAME = BeebEm3;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Default;
-		};
 		19DDA330086B296D0079CA8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = "${DEVELOPMENT_TEAM_ID}";
 				GCC_CHAR_IS_UNSIGNED_CHAR = YES;
 				GCC_ONE_BYTE_BOOL = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -455,35 +473,27 @@
 				);
 				GCC_VERSION = "";
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = "-lz";
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
 		19DDA331086B296D0079CA8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = "${DEVELOPMENT_TEAM_ID}";
 				GCC_CHAR_IS_UNSIGNED_CHAR = YES;
 				GCC_ONE_BYTE_BOOL = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = SOUNDSUPPORT;
 				GCC_VERSION = "";
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = "-lz";
+				SDKROOT = "";
 			};
 			name = Release;
-		};
-		19DDA332086B296D0079CA8E /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_CHAR_IS_UNSIGNED_CHAR = YES;
-				GCC_ONE_BYTE_BOOL = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = "SOUNDSUPPORT,DEBUG";
-				GCC_VERSION = "";
-				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-			};
-			name = Default;
 		};
 /* End XCBuildConfiguration section */
 
@@ -493,20 +503,18 @@
 			buildConfigurations = (
 				19DDA32C086B296D0079CA8E /* Debug */,
 				19DDA32D086B296D0079CA8E /* Release */,
-				19DDA32E086B296D0079CA8E /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Debug;
 		};
 		19DDA32F086B296D0079CA8E /* Build configuration list for PBXProject "BeebEm4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				19DDA330086B296D0079CA8E /* Debug */,
 				19DDA331086B296D0079CA8E /* Release */,
-				19DDA332086B296D0079CA8E /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
