@@ -1525,7 +1525,7 @@ void BeebWin::Initialise(char *home)
 
 #ifdef DEBUG
 
-	strcpy(RomPath, "/users/jon/myprojects/beebem/beebem4/");
+	strcpy(RomPath, "/Users/mart/Applications/BeebEm4a/");
 
 	fprintf(stderr, "DEBUG\n");
 	

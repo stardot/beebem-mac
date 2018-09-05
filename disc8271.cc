@@ -1670,17 +1670,18 @@ void LoadStartupDisc(int DriveNum, char *DiscString) {
 
     fprintf(stderr, "Loading %c, %d, disc file %s\n", DoubleSided, Tracks, Name);
 
-	if (strstr(Name, "ssd") > 0) DoubleSided = 'S';
-	if (strstr(Name, "dsd") > 0) DoubleSided = 'D';
-	if (strstr(Name, "img") > 0) DoubleSided = 'S';
-	if (strstr(Name, "adl") > 0) DoubleSided = 'A';
-	if (strstr(Name, "adf") > 0) DoubleSided = 'A';
+    // TODO MW : Check this... (was strstr(Name, "ssd') > 0)
+	if (strstr(Name, "ssd") != NULL) DoubleSided = 'S';
+	if (strstr(Name, "dsd") != NULL) DoubleSided = 'D';
+	if (strstr(Name, "img") != NULL) DoubleSided = 'S';
+	if (strstr(Name, "adl") != NULL) DoubleSided = 'A';
+	if (strstr(Name, "adf") != NULL) DoubleSided = 'A';
 
-	if (strstr(Name, "SSD") > 0) DoubleSided = 'S';
-	if (strstr(Name, "DSD") > 0) DoubleSided = 'D';
-	if (strstr(Name, "IMG") > 0) DoubleSided = 'S';
-	if (strstr(Name, "ADL") > 0) DoubleSided = 'A';
-	if (strstr(Name, "ADF") > 0) DoubleSided = 'A';
+	if (strstr(Name, "SSD") != NULL) DoubleSided = 'S';
+	if (strstr(Name, "DSD") != NULL) DoubleSided = 'D';
+	if (strstr(Name, "IMG") != NULL) DoubleSided = 'S';
+	if (strstr(Name, "ADL") != NULL) DoubleSided = 'A';
+	if (strstr(Name, "ADF") != NULL) DoubleSided = 'A';
 
 	
     switch (DoubleSided) {
