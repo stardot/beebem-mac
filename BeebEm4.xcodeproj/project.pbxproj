@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19005B950963E34200872367 /* scsi.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19005B940963E34200872367 /* scsi.cc */; };
+		19023C8908E3E96000BA702E /* uef.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19023C8808E3E96000BA702E /* uef.cc */; };
+		1907F0690AA32D4D0098CA99 /* serialdevices.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1907F0680AA32D4D0098CA99 /* serialdevices.cc */; };
+		190C3A110AA211B500DF468A /* csw.cc in Sources */ = {isa = PBXBuildFile; fileRef = 190C3A100AA211B500DF468A /* csw.cc */; };
+		190C57C608A55D5A007CD57E /* z80_support.cc in Sources */ = {isa = PBXBuildFile; fileRef = 190C57C308A55D5A007CD57E /* z80_support.cc */; };
+		190C57C708A55D5A007CD57E /* z80.cc in Sources */ = {isa = PBXBuildFile; fileRef = 190C57C408A55D5A007CD57E /* z80.cc */; };
+		190C57C808A55D5A007CD57E /* z80dis.cc in Sources */ = {isa = PBXBuildFile; fileRef = 190C57C508A55D5A007CD57E /* z80dis.cc */; };
+		191656C10B39BBAE00C4FA44 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 191656C00B39BBAE00C4FA44 /* IOKit.framework */; };
+		19172C4009653728006A4ED9 /* sasi.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19172C3F09653728006A4ED9 /* sasi.cc */; };
+		191CA3A509A11734006B6614 /* i86.cc in Sources */ = {isa = PBXBuildFile; fileRef = 191CA3A309A11734006B6614 /* i86.cc */; };
+		191CA3A609A11734006B6614 /* i386dasm.cc in Sources */ = {isa = PBXBuildFile; fileRef = 191CA3A409A11734006B6614 /* i386dasm.cc */; };
+		1927935608818ED200C10483 /* uefstate.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1927935508818ED200C10483 /* uefstate.cc */; };
+		1933BC890952FA1900C45D5A /* serial.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1933BC880952FA1900C45D5A /* serial.cc */; };
+		19368F9B098397E300B05B51 /* teletext.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19368F9A098397E300B05B51 /* teletext.cc */; };
+		1939747F08E6E5A900486851 /* userkybd.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1939747E08E6E5A900486851 /* userkybd.cc */; };
+		194EFCF8090E7EBE0060F3BD /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194EFCF7090E7EBE0060F3BD /* QuickTime.framework */; };
+		195825A80D19A79F0026D58C /* printing.cc in Sources */ = {isa = PBXBuildFile; fileRef = 195825A70D19A79F0026D58C /* printing.cc */; };
+		197E630009605023008AA155 /* econet.cc in Sources */ = {isa = PBXBuildFile; fileRef = 197E62FF09605023008AA155 /* econet.cc */; };
+		1991931D0BF5D4D20025F5A0 /* ArmDisassembler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1991931B0BF5D4D20025F5A0 /* ArmDisassembler.cc */; };
+		199193920BF601F20025F5A0 /* Arm.cc in Sources */ = {isa = PBXBuildFile; fileRef = 199193910BF601F20025F5A0 /* Arm.cc */; };
+		199E79F0088121AE006705E8 /* GetFile.cc in Sources */ = {isa = PBXBuildFile; fileRef = 199E79EF088121AE006705E8 /* GetFile.cc */; };
+		199E7BB108816C80006705E8 /* plist.cc in Sources */ = {isa = PBXBuildFile; fileRef = 199E7BB008816C80006705E8 /* plist.cc */; };
+		19CAF4AF0C1046FE0031E354 /* DFS image.icns in Resources */ = {isa = PBXBuildFile; fileRef = 19CAF4AE0C1046FE0031E354 /* DFS image.icns */; };
+		19CAF4B10C10470A0031E354 /* Z Random BBC file.icns in Resources */ = {isa = PBXBuildFile; fileRef = 19CAF4B00C10470A0031E354 /* Z Random BBC file.icns */; };
+		19CE534A0D22551100B90A78 /* beebwin.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19CE53490D22551100B90A78 /* beebwin.cc */; };
+		19E90D7E095B395C0004AD96 /* speech.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E90D7D095B395C0004AD96 /* speech.cc */; };
+		19E9FA14086B5C85008741A6 /* tube.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA03086B5C85008741A6 /* tube.cc */; };
+		19E9FA15086B5C85008741A6 /* disc1770.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA04086B5C85008741A6 /* disc1770.cc */; };
+		19E9FA17086B5C85008741A6 /* audev-macosx.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA06086B5C85008741A6 /* audev-macosx.cc */; };
+		19E9FA18086B5C85008741A6 /* atodconv.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA07086B5C85008741A6 /* atodconv.cc */; };
+		19E9FA19086B5C85008741A6 /* debug.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA08086B5C85008741A6 /* debug.cc */; };
+		19E9FA1A086B5C85008741A6 /* 6502core.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA09086B5C85008741A6 /* 6502core.cc */; };
+		19E9FA1B086B5C85008741A6 /* beebmem.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA0A086B5C85008741A6 /* beebmem.cc */; };
+		19E9FA1C086B5C85008741A6 /* beebsound.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA0B086B5C85008741A6 /* beebsound.cc */; };
+		19E9FA1E086B5C85008741A6 /* disc8271.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA0D086B5C85008741A6 /* disc8271.cc */; };
+		19E9FA1F086B5C85008741A6 /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA0E086B5C85008741A6 /* main.cc */; };
+		19E9FA21086B5C85008741A6 /* sysvia.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA10086B5C85008741A6 /* sysvia.cc */; };
+		19E9FA22086B5C85008741A6 /* uservia.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA11086B5C85008741A6 /* uservia.cc */; };
+		19E9FA23086B5C85008741A6 /* via.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA12086B5C85008741A6 /* via.cc */; };
+		19E9FA24086B5C85008741A6 /* video.cc in Sources */ = {isa = PBXBuildFile; fileRef = 19E9FA13086B5C85008741A6 /* video.cc */; };
+		19E9FA29086B5CA6008741A6 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E9FA28086B5CA6008741A6 /* CoreAudio.framework */; };
+		19E9FA31086B5CC1008741A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E9FA30086B5CC1008741A6 /* Carbon.framework */; };
+		19ECCC8A13CAD5FE00621B30 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19ECCC8813CAD5FE00621B30 /* main.xib */; };
+		19F3FF6108895EC900E9828E /* beebem.icns in Resources */ = {isa = PBXBuildFile; fileRef = 19F3FF6008895EC900E9828E /* beebem.icns */; };
+		8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */; };
+		8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
+		FC8B56531EBB94F1001DF5A9 /* discedit.cc in Sources */ = {isa = PBXBuildFile; fileRef = FC8B56521EBB94F1001DF5A9 /* discedit.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		1905228508A5FBE30096D433 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		1905228608A5FBF50096D433 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		1905228708A5FC8B0096D433 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		0867D6ABFE840B52C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19005B940963E34200872367 /* scsi.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = scsi.cc; sourceTree = "<group>"; };
+		19023C8808E3E96000BA702E /* uef.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = uef.cc; sourceTree = "<group>"; };
+		1907F0680AA32D4D0098CA99 /* serialdevices.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = serialdevices.cc; sourceTree = "<group>"; };
+		190C3A100AA211B500DF468A /* csw.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = csw.cc; sourceTree = "<group>"; };
+		190C57C308A55D5A007CD57E /* z80_support.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = z80_support.cc; sourceTree = "<group>"; };
+		190C57C408A55D5A007CD57E /* z80.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = z80.cc; sourceTree = "<group>"; };
+		190C57C508A55D5A007CD57E /* z80dis.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = z80dis.cc; sourceTree = "<group>"; };
+		191656C00B39BBAE00C4FA44 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		19172C3F09653728006A4ED9 /* sasi.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = sasi.cc; sourceTree = "<group>"; };
+		191CA3A309A11734006B6614 /* i86.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = i86.cc; sourceTree = "<group>"; };
+		191CA3A409A11734006B6614 /* i386dasm.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = i386dasm.cc; sourceTree = "<group>"; };
+		1927935508818ED200C10483 /* uefstate.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = uefstate.cc; sourceTree = "<group>"; };
+		1933BC880952FA1900C45D5A /* serial.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = serial.cc; sourceTree = "<group>"; };
+		19368F9A098397E300B05B51 /* teletext.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = teletext.cc; sourceTree = "<group>"; };
+		1939747E08E6E5A900486851 /* userkybd.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = userkybd.cc; sourceTree = "<group>"; };
+		194EFCF7090E7EBE0060F3BD /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		195825A70D19A79F0026D58C /* printing.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printing.cc; sourceTree = "<group>"; };
+		197E62FF09605023008AA155 /* econet.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = econet.cc; sourceTree = "<group>"; };
+		1991931B0BF5D4D20025F5A0 /* ArmDisassembler.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ArmDisassembler.cc; sourceTree = "<group>"; };
+		199193910BF601F20025F5A0 /* Arm.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Arm.cc; sourceTree = "<group>"; };
+		199E79EF088121AE006705E8 /* GetFile.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = GetFile.cc; sourceTree = "<group>"; };
+		199E7BB008816C80006705E8 /* plist.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = plist.cc; sourceTree = "<group>"; };
+		19AC0F76139C06D4003679A1 /* BeebEm4_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BeebEm4_Prefix.pch; path = ../../../../MyProjects/BeebEm/BeebEm4/src/BeebEm4_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		19CAF4AE0C1046FE0031E354 /* DFS image.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "DFS image.icns"; sourceTree = "<group>"; };
+		19CAF4B00C10470A0031E354 /* Z Random BBC file.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Z Random BBC file.icns"; sourceTree = "<group>"; };
+		19CE53490D22551100B90A78 /* beebwin.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = beebwin.cc; sourceTree = "<group>"; };
+		19E0F8FD0871C86800EFCF2D /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
+		19E90D7D095B395C0004AD96 /* speech.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = speech.cc; sourceTree = "<group>"; };
+		19E9FA03086B5C85008741A6 /* tube.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tube.cc; sourceTree = "<group>"; };
+		19E9FA04086B5C85008741A6 /* disc1770.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = disc1770.cc; sourceTree = "<group>"; };
+		19E9FA06086B5C85008741A6 /* audev-macosx.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = "audev-macosx.cc"; sourceTree = "<group>"; };
+		19E9FA07086B5C85008741A6 /* atodconv.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = atodconv.cc; sourceTree = "<group>"; };
+		19E9FA08086B5C85008741A6 /* debug.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = debug.cc; sourceTree = "<group>"; };
+		19E9FA09086B5C85008741A6 /* 6502core.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = 6502core.cc; sourceTree = "<group>"; };
+		19E9FA0A086B5C85008741A6 /* beebmem.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = beebmem.cc; sourceTree = "<group>"; };
+		19E9FA0B086B5C85008741A6 /* beebsound.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = beebsound.cc; sourceTree = "<group>"; };
+		19E9FA0D086B5C85008741A6 /* disc8271.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = disc8271.cc; sourceTree = "<group>"; };
+		19E9FA0E086B5C85008741A6 /* main.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
+		19E9FA10086B5C85008741A6 /* sysvia.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = sysvia.cc; sourceTree = "<group>"; };
+		19E9FA11086B5C85008741A6 /* uservia.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = uservia.cc; sourceTree = "<group>"; };
+		19E9FA12086B5C85008741A6 /* via.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = via.cc; sourceTree = "<group>"; };
+		19E9FA13086B5C85008741A6 /* video.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = video.cc; sourceTree = "<group>"; };
+		19E9FA28086B5CA6008741A6 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		19E9FA30086B5CC1008741A6 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		19ECCC8913CAD5FE00621B30 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/main.xib; sourceTree = "<group>"; };
+		19F3FF6008895EC900E9828E /* beebem.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = beebem.icns; sourceTree = "<group>"; };
+		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D0C4E970486CD37000505A6 /* BeebEm4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeebEm4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8B56521EBB94F1001DF5A9 /* discedit.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = discedit.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0C4E910486CD37000505A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */,
+				19E9FA29086B5CA6008741A6 /* CoreAudio.framework in Frameworks */,
+				19E9FA31086B5CC1008741A6 /* Carbon.framework in Frameworks */,
+				194EFCF8090E7EBE0060F3BD /* QuickTime.framework in Frameworks */,
+				191656C10B39BBAE00C4FA44 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195DF8CFFE9D517E11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C4E970486CD37000505A6 /* BeebEm4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20286C29FDCF999611CA2CEA /* BeebEm3 */ = {
+			isa = PBXGroup;
+			children = (
+				194EFCF7090E7EBE0060F3BD /* QuickTime.framework */,
+				191656C00B39BBAE00C4FA44 /* IOKit.framework */,
+				19E9FA30086B5CC1008741A6 /* Carbon.framework */,
+				19E9FA28086B5CA6008741A6 /* CoreAudio.framework */,
+				20286C2AFDCF999611CA2CEA /* Sources */,
+				20286C2CFDCF999611CA2CEA /* Resources */,
+				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
+				195DF8CFFE9D517E11CA2CBB /* Products */,
+			);
+			name = BeebEm3;
+			sourceTree = "<group>";
+		};
+		20286C2AFDCF999611CA2CEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FC8B56521EBB94F1001DF5A9 /* discedit.cc */,
+				19AC0F76139C06D4003679A1 /* BeebEm4_Prefix.pch */,
+				19E9FA09086B5C85008741A6 /* 6502core.cc */,
+				199193910BF601F20025F5A0 /* Arm.cc */,
+				1991931B0BF5D4D20025F5A0 /* ArmDisassembler.cc */,
+				19E9FA07086B5C85008741A6 /* atodconv.cc */,
+				19E9FA06086B5C85008741A6 /* audev-macosx.cc */,
+				19E9FA0A086B5C85008741A6 /* beebmem.cc */,
+				19E9FA0B086B5C85008741A6 /* beebsound.cc */,
+				19CE53490D22551100B90A78 /* beebwin.cc */,
+				190C3A100AA211B500DF468A /* csw.cc */,
+				19E9FA08086B5C85008741A6 /* debug.cc */,
+				19E9FA04086B5C85008741A6 /* disc1770.cc */,
+				19E9FA0D086B5C85008741A6 /* disc8271.cc */,
+				197E62FF09605023008AA155 /* econet.cc */,
+				199E79EF088121AE006705E8 /* GetFile.cc */,
+				191CA3A409A11734006B6614 /* i386dasm.cc */,
+				191CA3A309A11734006B6614 /* i86.cc */,
+				19E9FA0E086B5C85008741A6 /* main.cc */,
+				199E7BB008816C80006705E8 /* plist.cc */,
+				195825A70D19A79F0026D58C /* printing.cc */,
+				19172C3F09653728006A4ED9 /* sasi.cc */,
+				19005B940963E34200872367 /* scsi.cc */,
+				1933BC880952FA1900C45D5A /* serial.cc */,
+				1907F0680AA32D4D0098CA99 /* serialdevices.cc */,
+				19E90D7D095B395C0004AD96 /* speech.cc */,
+				19E9FA10086B5C85008741A6 /* sysvia.cc */,
+				19368F9A098397E300B05B51 /* teletext.cc */,
+				19E9FA03086B5C85008741A6 /* tube.cc */,
+				19023C8808E3E96000BA702E /* uef.cc */,
+				1927935508818ED200C10483 /* uefstate.cc */,
+				1939747E08E6E5A900486851 /* userkybd.cc */,
+				19E9FA11086B5C85008741A6 /* uservia.cc */,
+				19E9FA12086B5C85008741A6 /* via.cc */,
+				19E9FA13086B5C85008741A6 /* video.cc */,
+				190C57C408A55D5A007CD57E /* z80.cc */,
+				190C57C508A55D5A007CD57E /* z80dis.cc */,
+				190C57C308A55D5A007CD57E /* z80_support.cc */,
+				19E0F8FD0871C86800EFCF2D /* defines.h */,
+				19ECCC8813CAD5FE00621B30 /* main.xib */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		20286C2CFDCF999611CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19CAF4B00C10470A0031E354 /* Z Random BBC file.icns */,
+				19CAF4AE0C1046FE0031E354 /* DFS image.icns */,
+				8D0C4E960486CD37000505A6 /* Info.plist */,
+				19F3FF6008895EC900E9828E /* beebem.icns */,
+				0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				20286C33FDCF999611CA2CEA /* Carbon.framework */,
+				4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */,
+				4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0C4E890486CD37000505A6 /* BeebEm4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19DDA32B086B296D0079CA8E /* Build configuration list for PBXNativeTarget "BeebEm4" */;
+			buildPhases = (
+				8D0C4E8C0486CD37000505A6 /* Resources */,
+				8D0C4E8F0486CD37000505A6 /* Sources */,
+				8D0C4E910486CD37000505A6 /* Frameworks */,
+			);
+			buildRules = (
+				1905228708A5FC8B0096D433 /* PBXBuildRule */,
+				1905228608A5FBF50096D433 /* PBXBuildRule */,
+				1905228508A5FBE30096D433 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = BeebEm4;
+			productInstallPath = "$(HOME)/Applications";
+			productName = BeebEm3;
+			productReference = 8D0C4E970486CD37000505A6 /* BeebEm4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20286C28FDCF999611CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Jon Welch";
+			};
+			buildConfigurationList = 19DDA32F086B296D0079CA8E /* Build configuration list for PBXProject "BeebEm4" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 20286C29FDCF999611CA2CEA /* BeebEm3 */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D0C4E890486CD37000505A6 /* BeebEm4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0C4E8C0486CD37000505A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */,
+				19F3FF6108895EC900E9828E /* beebem.icns in Resources */,
+				19CAF4AF0C1046FE0031E354 /* DFS image.icns in Resources */,
+				19CAF4B10C10470A0031E354 /* Z Random BBC file.icns in Resources */,
+				19ECCC8A13CAD5FE00621B30 /* main.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0C4E8F0486CD37000505A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E9FA14086B5C85008741A6 /* tube.cc in Sources */,
+				19E9FA15086B5C85008741A6 /* disc1770.cc in Sources */,
+				19E9FA17086B5C85008741A6 /* audev-macosx.cc in Sources */,
+				19E9FA18086B5C85008741A6 /* atodconv.cc in Sources */,
+				19E9FA19086B5C85008741A6 /* debug.cc in Sources */,
+				19E9FA1A086B5C85008741A6 /* 6502core.cc in Sources */,
+				19E9FA1B086B5C85008741A6 /* beebmem.cc in Sources */,
+				19E9FA1C086B5C85008741A6 /* beebsound.cc in Sources */,
+				19E9FA1E086B5C85008741A6 /* disc8271.cc in Sources */,
+				19E9FA1F086B5C85008741A6 /* main.cc in Sources */,
+				19E9FA21086B5C85008741A6 /* sysvia.cc in Sources */,
+				19E9FA22086B5C85008741A6 /* uservia.cc in Sources */,
+				19E9FA23086B5C85008741A6 /* via.cc in Sources */,
+				19E9FA24086B5C85008741A6 /* video.cc in Sources */,
+				199E79F0088121AE006705E8 /* GetFile.cc in Sources */,
+				199E7BB108816C80006705E8 /* plist.cc in Sources */,
+				1927935608818ED200C10483 /* uefstate.cc in Sources */,
+				190C57C608A55D5A007CD57E /* z80_support.cc in Sources */,
+				190C57C708A55D5A007CD57E /* z80.cc in Sources */,
+				190C57C808A55D5A007CD57E /* z80dis.cc in Sources */,
+				19023C8908E3E96000BA702E /* uef.cc in Sources */,
+				1939747F08E6E5A900486851 /* userkybd.cc in Sources */,
+				1933BC890952FA1900C45D5A /* serial.cc in Sources */,
+				19E90D7E095B395C0004AD96 /* speech.cc in Sources */,
+				197E630009605023008AA155 /* econet.cc in Sources */,
+				19005B950963E34200872367 /* scsi.cc in Sources */,
+				19172C4009653728006A4ED9 /* sasi.cc in Sources */,
+				19368F9B098397E300B05B51 /* teletext.cc in Sources */,
+				191CA3A509A11734006B6614 /* i86.cc in Sources */,
+				191CA3A609A11734006B6614 /* i386dasm.cc in Sources */,
+				190C3A110AA211B500DF468A /* csw.cc in Sources */,
+				1907F0690AA32D4D0098CA99 /* serialdevices.cc in Sources */,
+				1991931D0BF5D4D20025F5A0 /* ArmDisassembler.cc in Sources */,
+				199193920BF601F20025F5A0 /* Arm.cc in Sources */,
+				195825A80D19A79F0026D58C /* printing.cc in Sources */,
+				19CE534A0D22551100B90A78 /* beebwin.cc in Sources */,
+				FC8B56531EBB94F1001DF5A9 /* discedit.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0867D6ABFE840B52C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		19ECCC8813CAD5FE00621B30 /* main.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19ECCC8913CAD5FE00621B30 /* English */,
+			);
+			name = main.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19DDA32C086B296D0079CA8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BeebEm4_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				PRODUCT_NAME = BeebEm4;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		19DDA32D086B296D0079CA8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BeebEm4_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				PRODUCT_NAME = BeebEm4;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		19DDA32E086B296D0079CA8E /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BeebEm3_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				PRODUCT_NAME = BeebEm3;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		19DDA330086B296D0079CA8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_CHAR_IS_UNSIGNED_CHAR = YES;
+				GCC_ONE_BYTE_BOOL = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					SOUNDSUPPORT,
+				);
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_LDFLAGS = "-lz";
+			};
+			name = Debug;
+		};
+		19DDA331086B296D0079CA8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_CHAR_IS_UNSIGNED_CHAR = YES;
+				GCC_ONE_BYTE_BOOL = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = SOUNDSUPPORT;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_LDFLAGS = "-lz";
+			};
+			name = Release;
+		};
+		19DDA332086B296D0079CA8E /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_CHAR_IS_UNSIGNED_CHAR = YES;
+				GCC_ONE_BYTE_BOOL = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "SOUNDSUPPORT,DEBUG";
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19DDA32B086B296D0079CA8E /* Build configuration list for PBXNativeTarget "BeebEm4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DDA32C086B296D0079CA8E /* Debug */,
+				19DDA32D086B296D0079CA8E /* Release */,
+				19DDA32E086B296D0079CA8E /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		19DDA32F086B296D0079CA8E /* Build configuration list for PBXProject "BeebEm4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DDA330086B296D0079CA8E /* Debug */,
+				19DDA331086B296D0079CA8E /* Release */,
+				19DDA332086B296D0079CA8E /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20286C28FDCF999611CA2CEA /* Project object */;
+}
