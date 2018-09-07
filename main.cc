@@ -535,10 +535,10 @@ int i;
     token = PushSymbolicHotKeyMode(kHIHotKeyModeAllDisabled);
   }
 
- 
   done = 0;
   
-  mainWin->Initialise(argv[0]);
+  if (!mainWin->Initialise(argv[0]))
+      exit(EXIT_FAILURE);
 
 //  SoundReset();
   if (SoundEnabled) SoundInit();

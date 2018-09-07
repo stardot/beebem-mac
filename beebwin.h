@@ -87,7 +87,7 @@ public:
 	int KeyUp(int vkey);
 	int TranslateKey(int vkey, int keyUp, int &row, int &col);
 
-	void Initialise(char *home);
+	bool Initialise(char *home);
 
 	BeebWin();
 	~BeebWin();

@@ -1507,7 +1507,7 @@ CGrafPtr mWin;
 
 
 /****************************************************************************/
-void BeebWin::Initialise(char *home)
+bool BeebWin::Initialise(char *home)
 {   
 	m_PicNum = 0;
 	m_LastTickCount = 0;
@@ -1523,26 +1523,40 @@ void BeebWin::Initialise(char *home)
 		m_vkeyPressed[k][1][1] = -1;
 	}
 
+    // Instead of hard coding a path for development use Xcode schemes. Set the
+    // 'Working Directory' under 'Options' for each scheme then just pick up the
+    // current working directory in either mode. Note that this will not work with
+    // application sadnboxing unless all of the resources are in the same place.
 #ifdef DEBUG
-
-	strcpy(RomPath, "/Users/mart/Applications/BeebEm4a/");
-
-	fprintf(stderr, "DEBUG\n");
-	
+    fprintf(stderr, "DEBUG\n");
 #else
+    fprintf(stderr, "RELEASE\n");
+#endif
 
-	fprintf(stderr, "RELEASE\n");
-
+    /*
 	strcpy(RomPath, home);
 	char *p = strstr(RomPath, ".app");		// Find name of bundle
 	if (p) *p = 0;
 	p = strrchr(RomPath, '/');		// then come back to parent directory
 	if (p) p[1] = 0; 
+    */
 
-//	strcpy(RomPath, "/users/jonwelch/myprojects/beebem/beebem4/");
-	
-#endif
+    // FIXME MW : Paths need sorting everywhere - PATH_MAX is 1024 in Darwin
+    // not 256 or 512 which seem to be commonly used
+    if (getcwd(RomPath, 512) == NULL) {
+        fprintf(stderr, "Unable to get current path\n");
+        return false;
+    }
 
+    if (RomPath[strlen(RomPath) - 1] != '/')
+    {
+        if (strlen(RomPath) == 512) {
+            fprintf(stderr, "ERROR: Path not terminated but too big to fix");
+            return false;
+        }
+        RomPath[strlen(RomPath)] = '/';
+    }
+    
 	strcpy(EconetCfgPath, RomPath);
 
 	fprintf(stderr, "Home directory is '%s'\n", RomPath);
@@ -1584,6 +1598,8 @@ void BeebWin::Initialise(char *home)
 		PrinterEnable(m_PrinterDevice);
 	else
 		PrinterDisable();
+    
+    return true;
 }
 
 /****************************************************************************/
