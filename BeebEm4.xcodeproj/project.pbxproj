@@ -194,7 +194,6 @@
 		20286C29FDCF999611CA2CEA /* BeebEm3 */ = {
 			isa = PBXGroup;
 			children = (
-				C1B784D42145D7020010BDCE /* UserData */,
 				C14463B021409DF000E90AC2 /* Config */,
 				194EFCF7090E7EBE0060F3BD /* QuickTime.framework */,
 				191656C00B39BBAE00C4FA44 /* IOKit.framework */,
@@ -202,6 +201,7 @@
 				19E9FA28086B5CA6008741A6 /* CoreAudio.framework */,
 				20286C2AFDCF999611CA2CEA /* Sources */,
 				20286C2CFDCF999611CA2CEA /* Resources */,
+				C1B784D42145D7020010BDCE /* UserData */,
 				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
 				195DF8CFFE9D517E11CA2CBB /* Products */,
 			);
