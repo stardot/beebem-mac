@@ -86,52 +86,52 @@
 
 /* Begin PBXFileReference section */
 		0867D6ABFE840B52C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		19005B940963E34200872367 /* scsi.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = scsi.cc; sourceTree = "<group>"; };
-		19023C8808E3E96000BA702E /* uef.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = uef.cc; sourceTree = "<group>"; };
-		1907F0680AA32D4D0098CA99 /* serialdevices.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = serialdevices.cc; sourceTree = "<group>"; };
-		190C3A100AA211B500DF468A /* csw.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = csw.cc; sourceTree = "<group>"; };
-		190C57C308A55D5A007CD57E /* z80_support.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = z80_support.cc; sourceTree = "<group>"; };
-		190C57C408A55D5A007CD57E /* z80.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = z80.cc; sourceTree = "<group>"; };
-		190C57C508A55D5A007CD57E /* z80dis.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = z80dis.cc; sourceTree = "<group>"; };
+		19005B940963E34200872367 /* scsi.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = scsi.cc; path = Src/scsi.cc; sourceTree = "<group>"; };
+		19023C8808E3E96000BA702E /* uef.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = uef.cc; path = Src/uef.cc; sourceTree = "<group>"; };
+		1907F0680AA32D4D0098CA99 /* serialdevices.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = serialdevices.cc; path = Src/serialdevices.cc; sourceTree = "<group>"; };
+		190C3A100AA211B500DF468A /* csw.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = csw.cc; path = Src/csw.cc; sourceTree = "<group>"; };
+		190C57C308A55D5A007CD57E /* z80_support.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = z80_support.cc; path = Src/z80_support.cc; sourceTree = "<group>"; };
+		190C57C408A55D5A007CD57E /* z80.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = z80.cc; path = Src/z80.cc; sourceTree = "<group>"; };
+		190C57C508A55D5A007CD57E /* z80dis.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = z80dis.cc; path = Src/z80dis.cc; sourceTree = "<group>"; };
 		191656C00B39BBAE00C4FA44 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
-		19172C3F09653728006A4ED9 /* sasi.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = sasi.cc; sourceTree = "<group>"; };
-		191CA3A309A11734006B6614 /* i86.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = i86.cc; sourceTree = "<group>"; };
-		191CA3A409A11734006B6614 /* i386dasm.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = i386dasm.cc; sourceTree = "<group>"; };
-		1927935508818ED200C10483 /* uefstate.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = uefstate.cc; sourceTree = "<group>"; };
-		1933BC880952FA1900C45D5A /* serial.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = serial.cc; sourceTree = "<group>"; };
-		19368F9A098397E300B05B51 /* teletext.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = teletext.cc; sourceTree = "<group>"; };
-		1939747E08E6E5A900486851 /* userkybd.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = userkybd.cc; sourceTree = "<group>"; };
+		19172C3F09653728006A4ED9 /* sasi.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = sasi.cc; path = Src/sasi.cc; sourceTree = "<group>"; };
+		191CA3A309A11734006B6614 /* i86.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = i86.cc; path = Src/i86.cc; sourceTree = "<group>"; };
+		191CA3A409A11734006B6614 /* i386dasm.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = i386dasm.cc; path = Src/i386dasm.cc; sourceTree = "<group>"; };
+		1927935508818ED200C10483 /* uefstate.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = uefstate.cc; path = Src/uefstate.cc; sourceTree = "<group>"; };
+		1933BC880952FA1900C45D5A /* serial.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = serial.cc; path = Src/serial.cc; sourceTree = "<group>"; };
+		19368F9A098397E300B05B51 /* teletext.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = teletext.cc; path = Src/teletext.cc; sourceTree = "<group>"; };
+		1939747E08E6E5A900486851 /* userkybd.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = userkybd.cc; path = Src/userkybd.cc; sourceTree = "<group>"; };
 		194EFCF7090E7EBE0060F3BD /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/../../../../../../../../../System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
-		195825A70D19A79F0026D58C /* printing.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printing.cc; sourceTree = "<group>"; };
-		197E62FF09605023008AA155 /* econet.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = econet.cc; sourceTree = "<group>"; };
-		1991931B0BF5D4D20025F5A0 /* ArmDisassembler.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ArmDisassembler.cc; sourceTree = "<group>"; };
-		199193910BF601F20025F5A0 /* Arm.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Arm.cc; sourceTree = "<group>"; };
-		199E79EF088121AE006705E8 /* GetFile.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = GetFile.cc; sourceTree = "<group>"; };
-		199E7BB008816C80006705E8 /* plist.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = plist.cc; sourceTree = "<group>"; };
-		19AC0F76139C06D4003679A1 /* BeebEm4_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BeebEm4_Prefix.pch; path = ../../../../MyProjects/BeebEm/BeebEm4/src/BeebEm4_Prefix.pch; sourceTree = SOURCE_ROOT; };
-		19CAF4AE0C1046FE0031E354 /* DFS image.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "DFS image.icns"; sourceTree = "<group>"; };
-		19CAF4B00C10470A0031E354 /* Z Random BBC file.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Z Random BBC file.icns"; sourceTree = "<group>"; };
-		19CE53490D22551100B90A78 /* beebwin.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = beebwin.cc; sourceTree = "<group>"; };
-		19E0F8FD0871C86800EFCF2D /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
-		19E90D7D095B395C0004AD96 /* speech.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = speech.cc; sourceTree = "<group>"; };
-		19E9FA03086B5C85008741A6 /* tube.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tube.cc; sourceTree = "<group>"; };
-		19E9FA04086B5C85008741A6 /* disc1770.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = disc1770.cc; sourceTree = "<group>"; };
-		19E9FA06086B5C85008741A6 /* audev-macosx.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = "audev-macosx.cc"; sourceTree = "<group>"; };
-		19E9FA07086B5C85008741A6 /* atodconv.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = atodconv.cc; sourceTree = "<group>"; };
-		19E9FA08086B5C85008741A6 /* debug.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = debug.cc; sourceTree = "<group>"; };
-		19E9FA09086B5C85008741A6 /* 6502core.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = 6502core.cc; sourceTree = "<group>"; };
-		19E9FA0A086B5C85008741A6 /* beebmem.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = beebmem.cc; sourceTree = "<group>"; };
-		19E9FA0B086B5C85008741A6 /* beebsound.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = beebsound.cc; sourceTree = "<group>"; };
-		19E9FA0D086B5C85008741A6 /* disc8271.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = disc8271.cc; sourceTree = "<group>"; };
-		19E9FA0E086B5C85008741A6 /* main.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
-		19E9FA10086B5C85008741A6 /* sysvia.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = sysvia.cc; sourceTree = "<group>"; };
-		19E9FA11086B5C85008741A6 /* uservia.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = uservia.cc; sourceTree = "<group>"; };
-		19E9FA12086B5C85008741A6 /* via.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = via.cc; sourceTree = "<group>"; };
-		19E9FA13086B5C85008741A6 /* video.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = video.cc; sourceTree = "<group>"; };
+		195825A70D19A79F0026D58C /* printing.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = printing.cc; path = Src/printing.cc; sourceTree = "<group>"; };
+		197E62FF09605023008AA155 /* econet.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = econet.cc; path = Src/econet.cc; sourceTree = "<group>"; };
+		1991931B0BF5D4D20025F5A0 /* ArmDisassembler.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ArmDisassembler.cc; path = Src/ArmDisassembler.cc; sourceTree = "<group>"; };
+		199193910BF601F20025F5A0 /* Arm.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Arm.cc; path = Src/Arm.cc; sourceTree = "<group>"; };
+		199E79EF088121AE006705E8 /* GetFile.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = GetFile.cc; path = Src/GetFile.cc; sourceTree = "<group>"; };
+		199E7BB008816C80006705E8 /* plist.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = plist.cc; path = Src/plist.cc; sourceTree = "<group>"; };
+		19AC0F76139C06D4003679A1 /* BeebEm4_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BeebEm4_Prefix.pch; path = Src/BeebEm4_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		19CAF4AE0C1046FE0031E354 /* DFS image.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "DFS image.icns"; path = "Resources/DFS image.icns"; sourceTree = "<group>"; };
+		19CAF4B00C10470A0031E354 /* Z Random BBC file.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Z Random BBC file.icns"; path = "Resources/Z Random BBC file.icns"; sourceTree = "<group>"; };
+		19CE53490D22551100B90A78 /* beebwin.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = beebwin.cc; path = Src/beebwin.cc; sourceTree = "<group>"; };
+		19E0F8FD0871C86800EFCF2D /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = defines.h; path = Src/defines.h; sourceTree = "<group>"; };
+		19E90D7D095B395C0004AD96 /* speech.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = speech.cc; path = Src/speech.cc; sourceTree = "<group>"; };
+		19E9FA03086B5C85008741A6 /* tube.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tube.cc; path = Src/tube.cc; sourceTree = "<group>"; };
+		19E9FA04086B5C85008741A6 /* disc1770.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = disc1770.cc; path = Src/disc1770.cc; sourceTree = "<group>"; };
+		19E9FA06086B5C85008741A6 /* audev-macosx.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = "audev-macosx.cc"; path = "Src/audev-macosx.cc"; sourceTree = "<group>"; };
+		19E9FA07086B5C85008741A6 /* atodconv.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = atodconv.cc; path = Src/atodconv.cc; sourceTree = "<group>"; };
+		19E9FA08086B5C85008741A6 /* debug.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = debug.cc; path = Src/debug.cc; sourceTree = "<group>"; };
+		19E9FA09086B5C85008741A6 /* 6502core.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = 6502core.cc; path = Src/6502core.cc; sourceTree = "<group>"; };
+		19E9FA0A086B5C85008741A6 /* beebmem.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = beebmem.cc; path = Src/beebmem.cc; sourceTree = "<group>"; };
+		19E9FA0B086B5C85008741A6 /* beebsound.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = beebsound.cc; path = Src/beebsound.cc; sourceTree = "<group>"; };
+		19E9FA0D086B5C85008741A6 /* disc8271.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = disc8271.cc; path = Src/disc8271.cc; sourceTree = "<group>"; };
+		19E9FA0E086B5C85008741A6 /* main.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cc; path = Src/main.cc; sourceTree = "<group>"; };
+		19E9FA10086B5C85008741A6 /* sysvia.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = sysvia.cc; path = Src/sysvia.cc; sourceTree = "<group>"; };
+		19E9FA11086B5C85008741A6 /* uservia.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = uservia.cc; path = Src/uservia.cc; sourceTree = "<group>"; };
+		19E9FA12086B5C85008741A6 /* via.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = via.cc; path = Src/via.cc; sourceTree = "<group>"; };
+		19E9FA13086B5C85008741A6 /* video.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = video.cc; path = Src/video.cc; sourceTree = "<group>"; };
 		19E9FA28086B5CA6008741A6 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
 		19E9FA30086B5CC1008741A6 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		19ECCC8913CAD5FE00621B30 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/main.xib; sourceTree = "<group>"; };
-		19F3FF6008895EC900E9828E /* beebem.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = beebem.icns; sourceTree = "<group>"; };
+		19F3FF6008895EC900E9828E /* beebem.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = beebem.icns; path = Resources/beebem.icns; sourceTree = "<group>"; };
 		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
 		4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
@@ -141,7 +141,7 @@
 		C170E2BB214098EB00A4221B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		C170E2BC214099F900A4221B /* CodeSign.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CodeSign.xcconfig; sourceTree = "<group>"; };
 		C1903D4421409181003BE0C2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		FC8B56521EBB94F1001DF5A9 /* discedit.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = discedit.cc; sourceTree = "<group>"; };
+		FC8B56521EBB94F1001DF5A9 /* discedit.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = discedit.cc; path = Src/discedit.cc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +396,7 @@
 				19ECCC8913CAD5FE00621B30 /* English */,
 			);
 			name = main.xib;
+			path = Src;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -415,7 +416,7 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = BeebEm4_Prefix.pch;
+				GCC_PREFIX_HEADER = Src/BeebEm4_Prefix.pch;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
@@ -443,7 +444,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = BeebEm4_Prefix.pch;
+				GCC_PREFIX_HEADER = Src/BeebEm4_Prefix.pch;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
