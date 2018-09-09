@@ -141,6 +141,29 @@
 		C170E2BB214098EB00A4221B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		C170E2BC214099F900A4221B /* CodeSign.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CodeSign.xcconfig; sourceTree = "<group>"; };
 		C1903D4421409181003BE0C2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		C1B784D52145D73B0010BDCE /* diskimg */ = {isa = PBXFileReference; lastKnownFileType = folder; name = diskimg; path = UserData/diskimg; sourceTree = "<group>"; };
+		C1B784D62145D73B0010BDCE /* Phroms.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = Phroms.cfg; path = UserData/Phroms.cfg; sourceTree = "<group>"; };
+		C1B784D72145D73B0010BDCE /* pics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pics; path = UserData/pics; sourceTree = "<group>"; };
+		C1B784D82145D73B0010BDCE /* RelayOn.snd */ = {isa = PBXFileReference; lastKnownFileType = text; name = RelayOn.snd; path = UserData/RelayOn.snd; sourceTree = "<group>"; };
+		C1B784D92145D73B0010BDCE /* Documents */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Documents; path = UserData/Documents; sourceTree = "<group>"; };
+		C1B784DA2145D73B0010BDCE /* Tapes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tapes; path = UserData/Tapes; sourceTree = "<group>"; };
+		C1B784DB2145D73B0010BDCE /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.txt; path = UserData/README.txt; sourceTree = "<group>"; };
+		C1B784DC2145D73B0010BDCE /* Econet.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = Econet.cfg; path = UserData/Econet.cfg; sourceTree = "<group>"; };
+		C1B784DD2145D73C0010BDCE /* teletext.fnt */ = {isa = PBXFileReference; lastKnownFileType = file; name = teletext.fnt; path = UserData/teletext.fnt; sourceTree = "<group>"; };
+		C1B784DE2145D73C0010BDCE /* HeadStep.snd */ = {isa = PBXFileReference; lastKnownFileType = text; name = HeadStep.snd; path = UserData/HeadStep.snd; sourceTree = "<group>"; };
+		C1B784DF2145D73C0010BDCE /* HeadUnload.snd */ = {isa = PBXFileReference; lastKnownFileType = file; name = HeadUnload.snd; path = UserData/HeadUnload.snd; sourceTree = "<group>"; };
+		C1B784E02145D73C0010BDCE /* BeebFile */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BeebFile; path = UserData/BeebFile; sourceTree = "<group>"; };
+		C1B784E12145D73C0010BDCE /* beebem.ini */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = beebem.ini; path = UserData/beebem.ini; sourceTree = "<group>"; };
+		C1B784E22145D73C0010BDCE /* HeadLoad.snd */ = {isa = PBXFileReference; lastKnownFileType = text; name = HeadLoad.snd; path = UserData/HeadLoad.snd; sourceTree = "<group>"; };
+		C1B784E32145D73C0010BDCE /* COPYRIGHT.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = COPYRIGHT.txt; path = UserData/COPYRIGHT.txt; sourceTree = "<group>"; };
+		C1B784E42145D73C0010BDCE /* HeadSeek.snd */ = {isa = PBXFileReference; lastKnownFileType = text; name = HeadSeek.snd; path = UserData/HeadSeek.snd; sourceTree = "<group>"; };
+		C1B784E52145D73C0010BDCE /* README_MAC.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = README_MAC.txt; path = UserData/README_MAC.txt; sourceTree = "<group>"; };
+		C1B784E62145D73C0010BDCE /* Phroms */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Phroms; path = UserData/Phroms; sourceTree = "<group>"; };
+		C1B784E72145D73C0010BDCE /* DriveMotor.snd */ = {isa = PBXFileReference; lastKnownFileType = text; name = DriveMotor.snd; path = UserData/DriveMotor.snd; sourceTree = "<group>"; };
+		C1B784E82145D73C0010BDCE /* RelayOff.snd */ = {isa = PBXFileReference; lastKnownFileType = text; name = RelayOff.snd; path = UserData/RelayOff.snd; sourceTree = "<group>"; };
+		C1B784E92145D73C0010BDCE /* Roms_Torch.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = Roms_Torch.cfg; path = UserData/Roms_Torch.cfg; sourceTree = "<group>"; };
+		C1B784EA2145D73C0010BDCE /* Roms.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = Roms.cfg; path = UserData/Roms.cfg; sourceTree = "<group>"; };
+		C1B784EB2145D73C0010BDCE /* beebstate */ = {isa = PBXFileReference; lastKnownFileType = folder; name = beebstate; path = UserData/beebstate; sourceTree = "<group>"; };
 		FC8B56521EBB94F1001DF5A9 /* discedit.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = discedit.cc; path = Src/discedit.cc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +194,7 @@
 		20286C29FDCF999611CA2CEA /* BeebEm3 */ = {
 			isa = PBXGroup;
 			children = (
+				C1B784D42145D7020010BDCE /* UserData */,
 				C14463B021409DF000E90AC2 /* Config */,
 				194EFCF7090E7EBE0060F3BD /* QuickTime.framework */,
 				191656C00B39BBAE00C4FA44 /* IOKit.framework */,
@@ -262,6 +286,36 @@
 				C1903D4421409181003BE0C2 /* Release.xcconfig */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		C1B784D42145D7020010BDCE /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+				C1B784E12145D73C0010BDCE /* beebem.ini */,
+				C1B784E02145D73C0010BDCE /* BeebFile */,
+				C1B784EB2145D73C0010BDCE /* beebstate */,
+				C1B784E32145D73C0010BDCE /* COPYRIGHT.txt */,
+				C1B784D52145D73B0010BDCE /* diskimg */,
+				C1B784D92145D73B0010BDCE /* Documents */,
+				C1B784E72145D73C0010BDCE /* DriveMotor.snd */,
+				C1B784DC2145D73B0010BDCE /* Econet.cfg */,
+				C1B784E22145D73C0010BDCE /* HeadLoad.snd */,
+				C1B784E42145D73C0010BDCE /* HeadSeek.snd */,
+				C1B784DE2145D73C0010BDCE /* HeadStep.snd */,
+				C1B784DF2145D73C0010BDCE /* HeadUnload.snd */,
+				C1B784E62145D73C0010BDCE /* Phroms */,
+				C1B784D62145D73B0010BDCE /* Phroms.cfg */,
+				C1B784D72145D73B0010BDCE /* pics */,
+				C1B784E52145D73C0010BDCE /* README_MAC.txt */,
+				C1B784DB2145D73B0010BDCE /* README.txt */,
+				C1B784E82145D73C0010BDCE /* RelayOff.snd */,
+				C1B784D82145D73B0010BDCE /* RelayOn.snd */,
+				C1B784E92145D73C0010BDCE /* Roms_Torch.cfg */,
+				C1B784EA2145D73C0010BDCE /* Roms.cfg */,
+				C1B784DA2145D73B0010BDCE /* Tapes */,
+				C1B784DD2145D73C0010BDCE /* teletext.fnt */,
+			);
+			name = UserData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
