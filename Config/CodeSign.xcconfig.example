@@ -13,5 +13,9 @@
 // the world. Just EXCLUDE THIS FILE FROM GIT and instead
 // include a sanitsed version of it as:
 // 'CodeSign.xcconfig.example'
+//
+// Note that for an individual in the Apple Developer Program
+// the team name is usually the name of the individual
 
+DEVELOPMENT_TEAM_NAME = Team Name
 DEVELOPMENT_TEAM_ID = XXXXXXXXXXXX
