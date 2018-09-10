@@ -138,6 +138,9 @@
 		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D0C4E970486CD37000505A6 /* BeebEm4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeebEm4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14463B121409E1900E90AC2 /* BeebEm4.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BeebEm4.xcconfig; sourceTree = "<group>"; };
+		C14C1AAD2145FEA900946B2B /* create_dmg.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = create_dmg.sh; path = Install/create_dmg.sh; sourceTree = "<group>"; };
+		C14C1AAE2145FEA900946B2B /* InstallBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = InstallBackground.png; path = Install/InstallBackground.png; sourceTree = "<group>"; };
+		C14C1AAF2145FEA900946B2B /* Template.dmg.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; name = Template.dmg.gz; path = Install/Template.dmg.gz; sourceTree = "<group>"; };
 		C170E2BB214098EB00A4221B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		C170E2BC214099F900A4221B /* CodeSign.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CodeSign.xcconfig; sourceTree = "<group>"; };
 		C1903D4421409181003BE0C2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -194,6 +197,7 @@
 		20286C29FDCF999611CA2CEA /* BeebEm3 */ = {
 			isa = PBXGroup;
 			children = (
+				C14C1AAC2145FE7D00946B2B /* Install */,
 				C14463B021409DF000E90AC2 /* Config */,
 				194EFCF7090E7EBE0060F3BD /* QuickTime.framework */,
 				191656C00B39BBAE00C4FA44 /* IOKit.framework */,
@@ -286,6 +290,16 @@
 				C1903D4421409181003BE0C2 /* Release.xcconfig */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		C14C1AAC2145FE7D00946B2B /* Install */ = {
+			isa = PBXGroup;
+			children = (
+				C14C1AAD2145FEA900946B2B /* create_dmg.sh */,
+				C14C1AAE2145FEA900946B2B /* InstallBackground.png */,
+				C14C1AAF2145FEA900946B2B /* Template.dmg.gz */,
+			);
+			name = Install;
 			sourceTree = "<group>";
 		};
 		C1B784D42145D7020010BDCE /* UserData */ = {
