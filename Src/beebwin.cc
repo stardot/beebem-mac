@@ -1524,22 +1524,10 @@ bool BeebWin::Initialise(char *home)
 	}
 
     // Instead of hard coding a path for development use Xcode schemes. Set the
-    // 'Working Directory' under 'Options' for each scheme then just pick up the
-    // current working directory in either mode. Note that this will not work with
-    // application sadnboxing unless all of the resources are in the same place.
+    // 'Working Directory' under 'Options' for the debug scheme then just pick up the
+    // current working directory.
 #ifdef DEBUG
     fprintf(stderr, "DEBUG\n");
-#else
-    fprintf(stderr, "RELEASE\n");
-#endif
-
-    /*
-	strcpy(RomPath, home);
-	char *p = strstr(RomPath, ".app");		// Find name of bundle
-	if (p) *p = 0;
-	p = strrchr(RomPath, '/');		// then come back to parent directory
-	if (p) p[1] = 0; 
-    */
 
     // FIXME MW : Paths need sorting everywhere - PATH_MAX is 1024 in Darwin
     // not 256 or 512 which seem to be commonly used
@@ -1547,7 +1535,7 @@ bool BeebWin::Initialise(char *home)
         fprintf(stderr, "Unable to get current path\n");
         return false;
     }
-
+    
     if (RomPath[strlen(RomPath) - 1] != '/')
     {
         if (strlen(RomPath) == 512) {
@@ -1556,10 +1544,24 @@ bool BeebWin::Initialise(char *home)
         }
         RomPath[strlen(RomPath)] = '/';
     }
-    
-	strcpy(EconetCfgPath, RomPath);
+#else
+    fprintf(stderr, "RELEASE\n");
 
-	fprintf(stderr, "Home directory is '%s'\n", RomPath);
+    strcpy(RomPath, home);
+    
+    char *p = strstr(RomPath, ".app");        // Find name of bundle
+    if (p)
+        *p = 0;
+    
+    p = strrchr(RomPath, '/');        // then come back to parent directory
+    
+    if (p)
+        p[1] = 0;
+#endif
+
+    fprintf(stderr, "Home directory is '%s'\n", RomPath);
+
+	strcpy(EconetCfgPath, RomPath);
 
 	LoadPreferences();
 
