@@ -139,8 +139,9 @@
 		8D0C4E970486CD37000505A6 /* BeebEm4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeebEm4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14463B121409E1900E90AC2 /* BeebEm4.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BeebEm4.xcconfig; sourceTree = "<group>"; };
 		C14C1AAD2145FEA900946B2B /* create_dmg.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = create_dmg.sh; path = Install/create_dmg.sh; sourceTree = "<group>"; };
-		C14C1AAE2145FEA900946B2B /* InstallBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = InstallBackground.png; path = Install/InstallBackground.png; sourceTree = "<group>"; };
 		C14C1AAF2145FEA900946B2B /* Template.dmg.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; name = Template.dmg.gz; path = Install/Template.dmg.gz; sourceTree = "<group>"; };
+		C15403F6215464E700ADD29E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Install/background.png; sourceTree = "<group>"; };
+		C15403F7215464E800ADD29E /* background.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; name = background.pxm; path = Install/background.pxm; sourceTree = "<group>"; };
 		C170E2BB214098EB00A4221B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		C170E2BC214099F900A4221B /* CodeSign.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CodeSign.xcconfig; sourceTree = "<group>"; };
 		C1903D4421409181003BE0C2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -295,8 +296,9 @@
 		C14C1AAC2145FE7D00946B2B /* Install */ = {
 			isa = PBXGroup;
 			children = (
+				C15403F6215464E700ADD29E /* background.png */,
+				C15403F7215464E800ADD29E /* background.pxm */,
 				C14C1AAD2145FEA900946B2B /* create_dmg.sh */,
-				C14C1AAE2145FEA900946B2B /* InstallBackground.png */,
 				C14C1AAF2145FEA900946B2B /* Template.dmg.gz */,
 			);
 			name = Install;
@@ -475,10 +477,10 @@
 			baseConfigurationReference = C170E2BB214098EB00A4221B /* Debug.xcconfig */;
 			buildSettings = {
 				ARCHS = i386;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = "${DEVELOPMENT_TEAM_ID}";
+				DEVELOPMENT_TEAM = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
