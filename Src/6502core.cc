@@ -604,7 +604,7 @@ INLINE static void INAInstrHandler(void) {
 INLINE static void JSRInstrHandler(int16 address) {
   PushWord(ProgramCounter-1);
   ProgramCounter=address;
-/*  if (ProgramCounter==0xffdd) {
+    /*if (ProgramCounter==0xffdd) {
 	  // OSCLI logging for elite debugging
 	  unsigned char *bptr;
 	  char pcbuf[256]; char *pcptr=pcbuf;
@@ -616,6 +616,7 @@ INLINE static void JSRInstrHandler(int16 address) {
 	  *pcptr=0;
 	  fprintf(osclilog,"%s\n",pcbuf);
   }
+ */
   /*if (ProgramCounter==0xffdd) {
 	  char errstr[250];
 	  sprintf(errstr,"OSFILE called\n");
@@ -1416,7 +1417,7 @@ void Exec6502Instruction(void) {
 	  *pcptr=0;
 	  fprintf(osclilog,"%s\n",pcbuf);
   }
-  /*if (ProgramCounter==0xffdd) {
+ if (ProgramCounter==0xffdd) {
 	  char errstr[250];
 	  sprintf(errstr,"OSFILE called\n");
 	  MessageBox(GETHWND,errstr,"BBC Emulator",MB_OKCANCEL|MB_ICONERROR);

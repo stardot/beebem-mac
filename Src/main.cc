@@ -224,10 +224,29 @@ static int NewCmd = 0;
 
 //		fprintf(stderr, "Key modifier : code = %08x\n", keycode);
 		
-		if (LastShift != NewShift) if (LastShift) mainWin->KeyUp(200); else mainWin->KeyDown(200);
-		if (LastCtrl  != NewCtrl)  if (LastCtrl)  mainWin->KeyUp(201); else mainWin->KeyDown(201);
-		if (LastCaps  != NewCaps)  if (LastCaps)  mainWin->KeyUp(202); else mainWin->KeyDown(202);
-		ctrl = keycode;
+		if (LastShift != NewShift)
+        {
+            if (LastShift)
+                mainWin->KeyUp(200);
+            else
+                mainWin->KeyDown(200);
+        }
+		if (LastCtrl  != NewCtrl)
+        {
+            if (LastCtrl)
+                mainWin->KeyUp(201);
+            else
+                mainWin->KeyDown(201);
+        }
+		if (LastCaps  != NewCaps)
+        {
+            if (LastCaps)
+                mainWin->KeyUp(202);
+            else
+                mainWin->KeyDown(202);
+        }
+		
+        ctrl = keycode;
       break;
     }
     break;

@@ -5,7 +5,7 @@
 #include <sys/time.h>
 
 #include "main.h"
-#include "printing.h"
+#include "Printing.h"
 
 //-----------------------------------------------------------------------------------------------------------------------
 static OSStatus MyCreatePageFormat(PMPrintSession printSession, PMPageFormat *pageFormat)

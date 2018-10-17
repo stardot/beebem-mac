@@ -364,8 +364,8 @@ bool dfs_import_file(const char *szDiscFile, int numSides, int side, DFS_DISC_CA
 		while (i < DFS_MAX_NAME_LEN && szFile[j] != 0)
 		{
 			char c = toupper(szFile[j]);
-			if (c >= 'A' && c <= 'Z' ||
-				c >= '0' && c <= '9' ||
+			if ((c >= 'A' && c <= 'Z') ||
+				(c >= '0' && c <= '9') ||
 				c == '!' || c == '$' || c == '%' || c == '^' || c == '&' || c == '(' || c == ')' ||
 				c == '_' || c == '-' || c == '=' || c == '+' || c == '[' || c == ']' || c == '{' ||
 				c == '}' || c == '@' || c == '#' || c == '~' || c == ',')
@@ -428,8 +428,8 @@ bool dfs_import_file(const char *szDiscFile, int numSides, int side, DFS_DISC_CA
 	if (success)
 	{
 		// Check for space in the catalogue
-		if (dfsCat->watford62 && dfsCat->numFiles >= 62 ||
-			!dfsCat->watford62 && dfsCat->numFiles >= 31)
+		if ((dfsCat->watford62 && dfsCat->numFiles >= 62) ||
+			(!dfsCat->watford62 && dfsCat->numFiles >= 31))
 		{
 			sprintf(szErrStr, "Catalogue full, cannot import %s", szFile);
 			success = false;

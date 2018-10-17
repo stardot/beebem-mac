@@ -1062,8 +1062,8 @@ void SerialPortOpenDialog()
 			else
 			{
 				io_object_t		modemService;
-					
-				while (modemService = IOIteratorNext(serialPortIterator))
+				
+				while ((modemService = IOIteratorNext(serialPortIterator)) != 0)
 				{
 					CFTypeRef	bsdPathAsCFString;
 						
