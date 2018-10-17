@@ -57,7 +57,7 @@
 #include "csw.h"
 #include "serialdevices.h"
 #include "Arm.h"
-#include "printing.h"
+#include "Printing.h"
 #include "discedit.h"
 
 // #include "keytable_2"
@@ -3084,16 +3084,19 @@ float r, g, b;
 		r = g = b = 0.299 * r + 0.587 * g + 0.114 * b;
 		switch (palette_type)
 		{
-		case AMBER:
-			r *= 1.0;
-			g *= 0.8;
-			b *= 0.1;
-			break;
-		case GREEN:
-			r *= 0.2;
-			g *= 0.9;
-			b *= 0.1;
-			break;
+			case AMBER:
+				r *= 1.0;
+				g *= 0.8;
+				b *= 0.1;
+				break;
+			case GREEN:
+				r *= 0.2;
+				g *= 0.9;
+				b *= 0.1;
+				break;
+			case RGB:
+			case BW:
+				break;
 		}
 	}
 	
@@ -4665,8 +4668,8 @@ void BeebWin::SaveUserKeyMap ()
 
 void BeebWin::SetAMXPosition(unsigned int x, unsigned int y)
 {
-	if ( (x < 0) || (x >= mainWin->m_XWinSize) ) return;
-	if ( (y < 0) || (y >= mainWin->m_YWinSize) ) return;
+	if (x >= mainWin->m_XWinSize) return;
+	if (y >= mainWin->m_YWinSize) return;
 	
 	if (AMXMouseEnabled)
 	{
@@ -4689,12 +4692,12 @@ void BeebWin::SetMousestickButton(int button)
 
 void BeebWin::ScaleMousestick(unsigned int x, unsigned int y)
 {
-static int lastx = 32768;
-static int lasty = 32768;
-int dx, dy;
+	static int lastx = 32768;
+	static int lasty = 32768;
+	int dx, dy;
 
-	if ( (x < 0) || (x >= mainWin->m_XWinSize) ) return;
-	if ( (y < 0) || (y >= mainWin->m_YWinSize) ) return;
+	if (x >= mainWin->m_XWinSize) return;
+	if (y >= mainWin->m_YWinSize) return;
 	
 	if (m_MenuIdSticks == 1)		// Analogue Mousestick
 	{
@@ -5304,9 +5307,10 @@ void CopyToClipBoardAsPDF(int starty, int nlines)
 /* Disc Import / Export */
 
 static DFS_DISC_CATALOGUE dfsCat;
-static int filesSelected[DFS_MAX_CAT_SIZE];
-static int numSelected;
-static char szExportFolder[MAX_PATH];
+// MW : Unused variables commented out
+//static int filesSelected[DFS_MAX_CAT_SIZE];
+//static int numSelected;
+//static char szExportFolder[MAX_PATH];
 
 // File export
 
@@ -5544,7 +5548,7 @@ void BeebWin::ImportDiscFiles(int menuId)
 	}
 	
 	// Check for no disk loaded
-	if (szDiscFile[0] == 0 || heads == 1 && (menuId == 2 || menuId == 3))
+	if (szDiscFile[0] == 0 || (heads == 1 && (menuId == 2 || menuId == 3)))
 	{
 		fprintf(stderr, "No disc loaded in drive %d\n", menuId);
 		return;

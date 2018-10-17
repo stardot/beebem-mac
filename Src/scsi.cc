@@ -232,7 +232,13 @@ int ReadData(void)
 			}
 			return data;
 			break;
-	}
+        case busfree:
+        case selection:
+        case command:
+        case execute:
+        case s_write:
+            break;
+    }
 
 	if (scsi.phase == busfree)
 		return scsi.lastwrite;
@@ -248,6 +254,12 @@ void WriteData(int data)
 	
 	switch (scsi.phase)
 	{
+		case execute :
+		case s_read :
+		case message :
+		case status :
+			break;
+			
 		case busfree :
 			if (scsi.sel) {
 				Selection(data);

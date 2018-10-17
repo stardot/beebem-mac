@@ -135,7 +135,7 @@ int data = 0xff;
 		data = 0x01;
 
 		if (sasi.sel == false) data |= 0x80;
-		if (sasi.req = false) data |= 0x40;
+		if (sasi.req == false) data |= 0x40;
 		if (sasi.cd == true) data |= 0x20;
 		if (sasi.io == true) data |= 0x10;
 		if (sasi.irq) data |= 0x08;
@@ -194,6 +194,12 @@ int SASIReadData(void)
 				sasi.next++;
 			}
 			return data;
+			break;
+		case busfree:
+		case selection:
+		case command:
+		case execute:
+		case s_write:
 			break;
 	}
 
@@ -284,6 +290,11 @@ void SASIWriteData(int data)
 			sasi.next++;
 			sasi.offset = 0;
 			return;
+		case status:
+		case message:
+		case execute:
+		case s_read:
+			break;
 	}
 
 	SASIBusFree();
